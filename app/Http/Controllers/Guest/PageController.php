@@ -8,11 +8,12 @@ use App\Models\Train;
 
 class PageController extends Controller
 {
+  
+
     public function index()
-{
-$trains = Train::all();
-dd($trains);              
-return view('home', compact('trains'));
-}
-    //
+    {
+        $today = date('Y-m-d');
+        $trains = Train::where('data_treno', '=', $today)->get();
+        return view('home', compact('trains', 'today'));
+    }
 }

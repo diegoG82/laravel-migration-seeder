@@ -1,1 +1,20 @@
-@import '~bootstrap/scss/bootstrap';
+    @import '~bootstrap/scss/bootstrap';
+
+
+    body{
+        background-color: black;
+        h1{
+            color:cornflowerblue; 
+        }
+
+        h2{
+            color:greenyellow
+        }
+
+    }
+
+    .card{
+        height: 400px;    
+
+        background-color: grey
+    }
