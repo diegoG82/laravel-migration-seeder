@@ -20,7 +20,6 @@ class TrainsTableSeeder extends Seeder
        
         for ($i = 1; $i <= 50; $i++) {
             $date = $faker->dateTimeBetween('-1 day', '+1 day'); 
-            
             $formattedDate = $date->format('Y-m-d');
     
             Train::create([
@@ -38,5 +37,4 @@ class TrainsTableSeeder extends Seeder
         }
     }
     
-
 }
